@@ -1,0 +1,38 @@
+Month 1
+bus:600
+uber:2500
+Total:3100
+---
+Month 2
+Total:0
+---
+Month 3
+Total:0
+---
+Month 4
+Total:0
+---
+Month 5
+Total:0
+---
+Month 6
+Total:0
+---
+Month 7
+Total:0
+---
+Month 8
+Total:0
+---
+Month 9
+Total:0
+---
+Month 10
+Total:0
+---
+Month 11
+Total:0
+---
+Month 12
+Total:0
+---
