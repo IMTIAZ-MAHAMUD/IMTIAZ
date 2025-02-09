@@ -82,7 +82,7 @@ void addMonthlyBudget() {
         cout << "Invalid month number!" << endl;
         return;
     }
-    month--; // Adjust for 0-based index
+    month--; 
 
     MonthlyBudget& budget = yearlyBudget[month];
     budget.categories.clear();
@@ -91,7 +91,7 @@ void addMonthlyBudget() {
     int numCategories;
     cout << "Enter the number of categories: ";
     cin >> numCategories;
-    cin.ignore(); // Clear the newline character
+    cin.ignore(); 
 
     string category;
     double amount;
@@ -100,7 +100,7 @@ void addMonthlyBudget() {
         getline(cin, category);
         cout << "Enter budget for " << category << ": ";
         cin >> amount;
-        cin.ignore(); // Clear the newline character
+        cin.ignore(); 
 
         budget.categories[category] = amount;
         budget.total += amount;
@@ -120,7 +120,7 @@ void viewMonthlyBudget() {
         cout << "Invalid month number!" << endl;
         return;
     }
-    month--; // Adjust for 0-based index
+    month--; 
 
     const MonthlyBudget& budget = yearlyBudget[month];
     cout << "\nBudget for Month " << month + 1 << ":" << endl;
@@ -150,7 +150,7 @@ int main() {
         cout << "0. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ensure buffer is clean after input
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
 
         switch (choice) {
             case 1: addMonthlyBudget(); break;
