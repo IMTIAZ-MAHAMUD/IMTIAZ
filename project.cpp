@@ -104,7 +104,7 @@ void addMonthlyBudget() {
 
         budget.categories[category] = amount;
         budget.total += amount;
-    }
+    } 
 
     saveToFile();
     cout << "Budget for month " << month + 1 << " saved successfully!" << endl;
